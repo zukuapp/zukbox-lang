@@ -1,8 +1,22 @@
+<!-- BEGIN ZUKU OFFICIAL BRAND -->
+<!-- markdownlint-disable MD033 MD041 -->
+<p align="center">
+  <a href="https://docs.zuzunza.com/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)"
+        srcset=".github/branding/zuku-logo-dark.png">
+      <img src=".github/branding/zuku-logo-light.png"
+        alt="ZUKU" width="320">
+    </picture>
+  </a>
+</p>
+<p align="center">ZUKU - 내가 불러 일으키는 새로운 창작.</p>
+<!-- markdownlint-enable MD033 MD041 -->
+<!-- END ZUKU OFFICIAL BRAND -->
+
 # ZUKBOX 언어 리소스
 
 이 저장소는 ZUKBOX 에디터의 다국어 UI 문자열을 관리하는 [Next2D 언어 저장소](https://github.com/Next2D/language.next2d.app)의 ZUKU 포크입니다. 원본 저작권과 [MIT 라이선스](LICENSE)를 유지합니다.
-
-<a href="https://zukuapp.github.io/docs/"><img src="https://raw.githubusercontent.com/zukuapp/.github/main/profile/assets/developer-hero.png" alt="Trecillo × ZUKU 개발자 문서" width="760"></a>
 
 **문서 입구:** [ZUKU 개발자 문서](https://zukuapp.github.io/docs/) · [ZUKBOX 에디터](https://github.com/zukuapp/zukbox)
 
