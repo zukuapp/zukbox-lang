@@ -1,0 +1,59 @@
+name: Locale integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  locales:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: locales
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Read pinned editor source
+        id: consumer
+        working-directory: locales
+        run: |
+          python3 - <<'PY'
+          import json, os, re
+          ref = json.load(open('validation/manifest.json'))['consumer']['source_commit']
+          assert re.fullmatch(r'[0-9a-f]{40}', ref)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write(f'ref={ref}\n')
+          PY
+      - name: Checkout pinned editor source for compatibility tests
+        uses: actions/checkout@v6
+        with:
+          repository: zukuapp/zukbox
+          ref: ${{ steps.consumer.outputs.ref }}
+          path: editor
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /index.html
+            /src/js/
+      - name: Validate all locale keys, placeholders and recorded hashes
+        working-directory: locales
+        run: python3 scripts/validate_locales.py --manifest validation/manifest.json
+      - name: Run malformed data and synchronization regressions
+        working-directory: locales
+        run: python3 -m unittest discover -s tests -v
+      - name: Check static editor keys and prepare isolated compatibility resources
+        working-directory: locales
+        run: python3 scripts/validate_locales.py --manifest validation/manifest.json --editor ../editor --sync-editor --source-audit
+      - name: Test the actual editor lookup and interpolation implementation
+        working-directory: locales
+        env:
+          ZUKBOX_EDITOR: ../editor
+        run: node --experimental-strip-types --test tests/runtime-interpolation.mjs

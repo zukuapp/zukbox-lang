@@ -1,0 +1,1733 @@
+{
+  "source_before_commit": "15068deebff075cb601670eab6123019b34a0476",
+  "reference": "Japanese source keys, adjacent English history text, and the actual ZUKBOX first-occurrence interpolation rules.",
+  "translation_repairs": 25,
+  "identical_duplicates_removed": 20,
+  "keys_repaired": 1,
+  "repairs": [
+    {
+      "locale": "bulgaria",
+      "row": 1,
+      "kind": "key",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4を深度%s5に移動}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4を深度%s5に移動}",
+      "before": "Преместване на дълбочината на кадъра %s3%s4 на слой [%s2] на [%s1] към дълбочината на кадъра %s5}",
+      "after": "Преместване на дълбочината на кадъра %s3%s4 на слой [%s2] на [%s1] към дълбочината на кадъра %s5}",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1,
+        "%s5": 1
+      },
+      "after_placeholders": {
+        "%s3": 1,
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1,
+        "%s5": 1
+      },
+      "reason": "Restore the missing closing brace to the Japanese source key."
+    },
+    {
+      "locale": "bulgaria",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "настройки",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "chinese",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "将 %s4 帧添加到 [%s1] 层 [%s2] 的 PLACEHOLDER 第二帧",
+      "after": "将 %s4 帧添加到 [%s1] 的 [%s2] 图层的第 %s3 帧",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s1": 1,
+        "%s2": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "chinese",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "环境",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "english",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "Add %s4 frame to PLACEHOLDER 2nd frame of layer [%s2] of [%s1]",
+      "after": "Add %s4 frame to frame %s3 of layer [%s2] of [%s1]",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s3": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "english",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "setting",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "finland",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "asetukset",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "french",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "Ajouter le cadre %s4 au PLACEHOLDER 2ème cadre du calque [%s2] de [%s1]",
+      "after": "Ajouter %s4 images à l'image %s3 du calque [%s2] de [%s1]",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s3": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "french",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "paramètre",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "germany",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "Fügen Sie den %s4-Frame zum zweiten PLACEHOLDER-Frame der Ebene [%s2] von [%s1] hinzu.",
+      "after": "Fügen Sie %s4 Frames bei Frame %s3 der Ebene [%s2] von [%s1] hinzu.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s3": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "germany",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "Einstellung",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "hungary",
+      "row": 1,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4を深度%s5に移動}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4を深度%s5に移動}}",
+      "before": "A [%s1] [%s2] réteg [%s2] %s3 képkockájának és %s4 mélységének áthelyezése a %s5 mélységbe.",
+      "after": "A [%s1] [%s2] réteg %s3 képkockájának és %s4 mélységének áthelyezése a %s5 mélységbe.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1
+      },
+      "before_placeholders": {
+        "%s1": 1,
+        "%s2": 2,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1
+      },
+      "reason": "Keep the layer token once: the editor replaces only the first occurrence per index."
+    },
+    {
+      "locale": "hungary",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "beállítások",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "indonesia",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "pengaturan",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "italiano",
+      "row": 22,
+      "kind": "translation",
+      "key": "{{新規Shape[%s1]を追加}}",
+      "before_key": "{{新規Shape[%s1]を追加}}",
+      "before": "Aggiunta nuova forma[XPLACEholderX0X]",
+      "after": "Aggiunta nuova forma[%s1]",
+      "expected_placeholders": {
+        "%s1": 1
+      },
+      "before_placeholders": {},
+      "after_placeholders": {
+        "%s1": 1
+      },
+      "reason": "Restore numbered placeholders from the translator zero-based sentinel indices."
+    },
+    {
+      "locale": "italiano",
+      "row": 27,
+      "kind": "translation",
+      "key": "{{ステージの高さを%s1から%s2に変更}}",
+      "before_key": "{{ステージの高さを%s1から%s2に変更}}",
+      "before": "Altezza del palco modificata da %s1 a XPLACEholderx1X",
+      "after": "Altezza del palco modificata da %s1 a %s2",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1
+      },
+      "before_placeholders": {
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1
+      },
+      "reason": "Restore numbered placeholders from the translator zero-based sentinel indices."
+    },
+    {
+      "locale": "italiano",
+      "row": 28,
+      "kind": "translation",
+      "key": "{{ステージの幅を%s1から%s2に変更}}",
+      "before_key": "{{ステージの幅を%s1から%s2に変更}}",
+      "before": "Larghezza del palco modificata da XPLACEholderx0X a XPLACEholderx1X",
+      "after": "Larghezza del palco modificata da %s1 a %s2",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1
+      },
+      "before_placeholders": {},
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1
+      },
+      "reason": "Restore numbered placeholders from the translator zero-based sentinel indices."
+    },
+    {
+      "locale": "italiano",
+      "row": 58,
+      "kind": "translation",
+      "key": "{{新規MovieClip[%s1]を追加}}",
+      "before_key": "{{新規MovieClip[%s1]を追加}}",
+      "before": "Aggiunto nuovo filmato [XPLACEholderX0X]",
+      "after": "Aggiunto nuovo filmato [%s1]",
+      "expected_placeholders": {
+        "%s1": 1
+      },
+      "before_placeholders": {},
+      "after_placeholders": {
+        "%s1": 1
+      },
+      "reason": "Restore numbered placeholders from the translator zero-based sentinel indices."
+    },
+    {
+      "locale": "italiano",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "collocamento",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "japanese",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "設定",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "korean",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "[%s1] 레이어 [%s2]의 PLACEHOLDER 두 번째 프레임에 %s4 프레임을 추가합니다.",
+      "after": "[%s1]의 [%s2] 레이어 %s3 프레임에 %s4 프레임 추가",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s4": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "korean",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "환경",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "latvia",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "iestatījumi",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "lithuania",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "nustatymai",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "netherlands",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "Voeg %s4 frame toe aan PLACEHOLDER 2e frame van laag [%s2] van [%s1]",
+      "after": "Voeg %s4 frames toe bij frame %s3 van laag [%s2] van [%s1]",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s3": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "netherlands",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "instelling",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "poland",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "Dodaj ramkę %s4 do drugiej klatki PLACEHOLDER warstwy [%s2] z [%s1]",
+      "after": "Dodaj %s4 klatki przy klatce %s3 warstwy [%s2] w [%s1]",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s3": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "poland",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "ustawienie",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "romania",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "Adăugați cadru %s4 la PLACEHOLDER Al doilea cadru al stratului [%s2] din [%s1]",
+      "after": "Adăugați %s4 cadre la cadrul %s3 al stratului [%s2] din [%s1]",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s3": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "romania",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "setare",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "russia",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "Добавьте кадр %s4 ко второму кадру PLACEHOLDER слоя [%s2] из [%s1]",
+      "after": "Добавьте %s4 кадров к кадру %s3 слоя [%s2] в [%s1]",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s3": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "russia",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "параметр",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "slovakia",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "nastavenia",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "spanish",
+      "row": 45,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム目に%s4フレームを追加}}",
+      "before": "Agregue el marco %s4 al segundo marco PLACEHOLDER de la capa [%s2] de [%s1]",
+      "after": "Agregue %s4 fotogramas en el fotograma %s3 de la capa [%s2] de [%s1]",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1
+      },
+      "before_placeholders": {
+        "%s4": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "after_placeholders": {
+        "%s4": 1,
+        "%s3": 1,
+        "%s2": 1,
+        "%s1": 1
+      },
+      "reason": "Restore frame index %s3 and frame count %s4 from the Japanese history key."
+    },
+    {
+      "locale": "spanish",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "configuración",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "turkey",
+      "row": 1,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4を深度%s5に移動}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4を深度%s5に移動}}",
+      "before": "%s3 çerçevesini ve [%s1] katmanının %s4 derinliğini %s5 derinliğine taşıyın",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğini %s5 derinliğine taşıyın.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s5": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 3,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の行列を%s5°から%s6°に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の行列を%s5°から%s6°に変更}}",
+      "before": "%s3 çerçevesinin matrisini ve [%s1] katmanının %s4 derinliğini %s1°'den %s6°'ye değiştirin",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki matrisi %s5°'den %s6°'ye değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 2,
+        "%s4": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 9,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の赤色成分オフセットを%s5から%s6に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の赤色成分オフセットを%s5から%s6に変更}}",
+      "before": "%s3 çerçevesinin kırmızı bileşen ofseti ve [%s1] katmanının %s4 derinliği %s5'ten %s6'e değiştirildi",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki kırmızı bileşen ofsetini %s5'ten %s6'ya değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 11,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の透明度オフセットを%s5から%s6に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の透明度オフセットを%s5から%s6に変更}}",
+      "before": "%s3 çerçevesinin şeffaflık ofsetini ve [%s1] katmanının %s4 derinliğini %s5'ten %s6'e değiştirin",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki şeffaflık ofsetini %s5'ten %s6'ya değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 12,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の透明度を%s5%から%s6%に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の透明度を%s5%から%s6%に変更}}",
+      "before": "%s3 çerçevesinin şeffaflığını ve [%s1] katmanının %s4 derinliğini XPLACEHOLDERX%4X'ten %%s6'e değiştirin",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki şeffaflığı %s5%'ten %s6%'ya değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 16,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の回転を%s5°から%s6°に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4の回転を%s5°から%s6°に変更}}",
+      "before": "%s3 çerçevesinin dönüşünü ve [%s1] katmanının %s4 derinliğini %s5°'den %s6°'ye değiştirin",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki dönüşü %s5°'den %s6°'ye değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 17,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4のyスケールを%s5%から%s6%に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4のyスケールを%s5%から%s6%に変更}}",
+      "before": "%s3 çerçevesinin y ölçeğini ve [%s1] katmanının %s4 derinliğini %%s5'ten %%s6'e değiştirin",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki y ölçeğini %s5%'ten %s6%'ya değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 18,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4のxスケールを%s5%から%s6%に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4のxスケールを%s5%から%s6%に変更}}",
+      "before": "%s3 çerçevesinin x ölçeğini ve [%s1] katmanının %s4 derinliğini XPLACEHOLDERX%4X'ten %%s6'e değiştirin",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki x ölçeğini %s5%'ten %s6%'ya değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 23,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4のy座標を%s5から%s6に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4のy座標を%s5から%s6に変更}}",
+      "before": "%s3 çerçevesinin y koordinatını ve [%s1] katmanının %s4 derinliğini %s5'ten %s6'e değiştirin",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki y koordinatını %s5'ten %s6'ya değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 24,
+      "kind": "translation",
+      "key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4のx座標を%s5から%s6に変更}}",
+      "before_key": "{{[%s1]のレイヤー[%s2]の%s3フレーム・深度%s4のx座標を%s5から%s6に変更}}",
+      "before": "%s3 çerçevesinin x koordinatını ve [%s1] katmanının %s4 derinliğini %s5'ten %s6'e değiştirin",
+      "after": "[%s1] içindeki [%s2] katmanının %s3 karesinde %s4 derinliğindeki x koordinatını %s5'ten %s6'ya değiştirin.",
+      "expected_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "before_placeholders": {
+        "%s3": 1,
+        "%s1": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "after_placeholders": {
+        "%s1": 1,
+        "%s2": 1,
+        "%s3": 1,
+        "%s4": 1,
+        "%s5": 1,
+        "%s6": 1
+      },
+      "reason": "Restore scene/layer/frame/depth/value indices and units from the Japanese history key."
+    },
+    {
+      "locale": "turkey",
+      "row": 299,
+      "kind": "identical_duplicate",
+      "key": "{{設定}}",
+      "before": "ayar",
+      "after": null,
+      "reason": "Identical Map key/value; deleting the duplicate preserves last-wins output."
+    },
+    {
+      "locale": "bulgaria",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "bulgaria",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Стил",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "bulgaria",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Височина на слоя",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "bulgaria",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "История",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "bulgaria",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Прилепване",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "chinese",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "chinese",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "样式",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "chinese",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "图层高度",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "chinese",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "历史记录",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "chinese",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "吸附",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "english",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "english",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Style",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "english",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Layer height",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "english",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "History",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "english",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Snap",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "finland",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "finland",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Tyyli",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "finland",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Tason korkeus",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "finland",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Historia",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "finland",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Kohdistus",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "french",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "french",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Style",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "french",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Hauteur du calque",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "french",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Historique",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "french",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Magnétisme",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "germany",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "germany",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Stil",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "germany",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Ebenenhöhe",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "germany",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Verlauf",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "germany",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Einrasten",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "hungary",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "hungary",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Stílus",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "hungary",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Rétegmagasság",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "hungary",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Előzmények",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "hungary",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Igazítás",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "indonesia",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "indonesia",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Gaya",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "indonesia",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Tinggi lapisan",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "indonesia",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Riwayat",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "indonesia",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Penjajaran",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "italiano",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "italiano",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Stile",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "italiano",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Altezza del livello",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "italiano",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Cronologia",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "italiano",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Aggancio",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "japanese",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "japanese",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "スタイル",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "japanese",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "レイヤーの高さ",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "japanese",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "作業履歴",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "japanese",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "吸着",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "korean",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "korean",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "스타일",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "korean",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "레이어 높이",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "korean",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "작업 이력",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "korean",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "스냅",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "latvia",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "latvia",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Stils",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "latvia",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Slāņa augstums",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "latvia",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Vēsture",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "latvia",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Piesaistīšana",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "lithuania",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "lithuania",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Stilius",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "lithuania",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Sluoksnio aukštis",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "lithuania",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Istorija",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "lithuania",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Pritraukimas",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "netherlands",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "netherlands",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Stijl",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "netherlands",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Laaghoogte",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "netherlands",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Geschiedenis",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "netherlands",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Uitlijnen",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "poland",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "poland",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Styl",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "poland",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Wysokość warstwy",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "poland",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Historia",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "poland",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Przyciąganie",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "romania",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "romania",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Stil",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "romania",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Înălțimea stratului",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "romania",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Istoric",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "romania",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Aliniere",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "russia",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "russia",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Стиль",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "russia",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Высота слоя",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "russia",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "История",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "russia",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Привязка",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "slovakia",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "slovakia",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Štýl",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "slovakia",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Výška vrstvy",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "slovakia",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "História",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "slovakia",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Prichytávanie",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "spanish",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "spanish",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Estilo",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "spanish",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Altura de capa",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "spanish",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Historial",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "spanish",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Ajuste",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "turkey",
+      "kind": "source_ui_label",
+      "key": "{{Photopea}}",
+      "before": null,
+      "after": "Photopea",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "turkey",
+      "kind": "source_ui_label",
+      "key": "{{スタイル}}",
+      "before": null,
+      "after": "Stil",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "turkey",
+      "kind": "source_ui_label",
+      "key": "{{レイヤーの高さ}}",
+      "before": null,
+      "after": "Katman yüksekliği",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "turkey",
+      "kind": "source_ui_label",
+      "key": "{{作業履歴}}",
+      "before": null,
+      "after": "Geçmiş",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    },
+    {
+      "locale": "turkey",
+      "kind": "source_ui_label",
+      "key": "{{吸着}}",
+      "before": null,
+      "after": "Yapışma",
+      "reason": "Provide a real mapping for the editor source UI label; Photopea is a proper name."
+    }
+  ],
+  "added_ui_labels": 100,
+  "ui_source": {
+    "repository": "zukuapp/zukbox",
+    "commit": "a12096e3527d4fa86edbc22f8b868d06e28b6da1",
+    "path": "index.html",
+    "lines": [
+      538,
+      1219,
+      1362,
+      1399,
+      2240
+    ],
+    "note": "Snap currently appears in a commented UI section; retain its translation for this declared source label."
+  }
+}
