@@ -1,0 +1,61 @@
+{
+  "name": "@zuku/lang",
+  "version": "0.1.0",
+  "description": "Validated ZUKBOX UI locale pairs with browser-safe URL lookup and integrity-checked loading.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs",
+      "default": "./src/index.mjs"
+    },
+    "./manifest": "./src/manifest.mjs",
+    "./locales/bg.json": "./docs/bulgaria.json",
+    "./locales/zh.json": "./docs/chinese.json",
+    "./locales/en.json": "./docs/english.json",
+    "./locales/fi.json": "./docs/finland.json",
+    "./locales/fr.json": "./docs/french.json",
+    "./locales/de.json": "./docs/germany.json",
+    "./locales/hu.json": "./docs/hungary.json",
+    "./locales/id.json": "./docs/indonesia.json",
+    "./locales/it.json": "./docs/italiano.json",
+    "./locales/ja.json": "./docs/japanese.json",
+    "./locales/ko.json": "./docs/korean.json",
+    "./locales/lv.json": "./docs/latvia.json",
+    "./locales/lt.json": "./docs/lithuania.json",
+    "./locales/nl.json": "./docs/netherlands.json",
+    "./locales/pl.json": "./docs/poland.json",
+    "./locales/ro.json": "./docs/romania.json",
+    "./locales/ru.json": "./docs/russia.json",
+    "./locales/sk.json": "./docs/slovakia.json",
+    "./locales/es.json": "./docs/spanish.json",
+    "./locales/tr.json": "./docs/turkey.json"
+  },
+  "files": [
+    "src/",
+    "docs/*.json",
+    "validation/manifest.json",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    ".github/branding/zuku-logo-light.png",
+    ".github/branding/zuku-logo-dark.png"
+  ],
+  "scripts": {
+    "generate": "node scripts/generate-package-manifest.mjs",
+    "generate:check": "node scripts/generate-package-manifest.mjs --check",
+    "validate": "python3 scripts/validate_locales.py --manifest validation/manifest.json",
+    "test:package": "node --test tests/package-locale.test.mjs",
+    "prepack": "npm run generate:check && npm run validate && npm run test:package"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zukuapp/zukbox-lang.git"
+  },
+  "types": "./src/index.d.ts"
+}

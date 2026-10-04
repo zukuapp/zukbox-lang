@@ -49,6 +49,11 @@ jobs:
       - name: Run malformed data and synchronization regressions
         working-directory: locales
         run: python3 -m unittest discover -s tests -v
+      - name: Verify npm locale metadata and browser-safe loader
+        working-directory: locales
+        run: |
+          npm run generate:check
+          npm run test:package
       - name: Check static editor keys and prepare isolated compatibility resources
         working-directory: locales
         run: python3 scripts/validate_locales.py --manifest validation/manifest.json --editor ../editor --sync-editor --source-audit

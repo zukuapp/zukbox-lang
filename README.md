@@ -26,7 +26,35 @@
 
 에디터는 자기 저장소의 `public/language/*.json`을 `/language` 경로로 제공합니다. 이 저장소의 JSON을 수정해도 에디터의 배포 파일이 자동으로 갱신되지는 않습니다. 에디터와 언어 파일의 차이를 검토한 뒤 필요한 변경을 함께 반영합니다.
 
-`docs/CNAME`은 원본 Next2D 언어 도메인을 가리킵니다. 이 저장소에는 npm 패키지 설정이나 ZUKU 배포 명령이 없습니다.
+`docs/CNAME`은 원본 Next2D 언어 도메인을 가리키며 npm 배포 파일에는 포함하지 않습니다.
+
+## 게임·에디터에서 npm 리소스 사용
+
+`@zuku/lang@0.1.0`은 기존 20개 JSON의 바이트와 MIT 저작권 고지를 유지하는
+리소스 패키지입니다. 공개된 릴리스는 `npm install @zuku/lang@0.1.0`으로 설치합니다.
+`localeURL(code)`는 정확한 언어 코드의 URL을 반환하고, `loadLocale(code)`는
+브라우저에서 파일 해시를 확인해 문자열 쌍 배열을 읽습니다. 미지원 코드는
+요청 전에 실패하며 다른 언어로 자동 대체하지 않습니다.
+
+```js
+import { localeCodes, localeURL, loadLocale } from '@zuku/lang';
+const koURL = localeURL('ko');
+const pairs = await loadLocale('ko'); // HTTPS 또는 localhost의 Web Crypto 환경
+const mapping = new Map(pairs);
+```
+
+JSON 직접 내보내기는 `@zuku/lang/locales/ko.json`처럼 사용합니다. 언어 코드는
+`bg zh en fi fr de hu id it ja ko lv lt nl pl ro ru sk es tr`입니다.
+Node.js에서는 `readFile(localeURL('ko'))`로 원본 파일을 읽거나 JSON 모듈의
+`with { type: 'json' }`을 사용합니다. Node의 기본 fetch는 file URL을 읽지 않으므로
+`loadLocale`에 파일을 읽는 fetch 구현을 명시적으로 제공할 수도 있습니다.
+
+English: The package preserves all original validated JSON bytes and the existing
+MIT notice. Resolve exact locale codes with `localeURL`, import JSON subpaths, or
+use `loadLocale` in an HTTPS/localhost browser with Web Crypto. Unknown codes fail
+before a request; no implicit fallback is applied. Node consumers can read the
+returned file URL directly. `npm run generate:check` and `npm run test:package`
+verify the generated manifest and loader without translating or deploying files.
 
 ## 번역 수정
 
