@@ -17,4 +17,4 @@
 
 ## 원본 프로젝트
 
-이 저장소는 [Next2D 언어 저장소](https://github.com/Next2D/language.next2d.app)의 포크입니다. 원본 프로젝트에만 해당하는 문제는 원본 프로젝트의 보안 정책을 따릅니다. 조직 공통 정책은 [ZUKU 조직 공통 보안 정책](https://github.com/zukuapp/.github/blob/main/SECURITY.md)에 있습니다.
+원본 [Next2D 언어 저장소](https://github.com/Next2D/language.next2d.app)에만 해당하는 문제는 원본 프로젝트의 보안 정책에 따라 신고합니다. 조직 공통 정책은 [ZUKU 조직 공통 보안 정책](https://github.com/zukuapp/.github/blob/main/SECURITY.md)에 있습니다.
